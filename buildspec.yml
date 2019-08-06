@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+   pre_build:
+      commands:
+      -echo "Enter the pre-build phases in aws"
+   build:
+      commands:
+      - echo "Entered build phases"
+      - mvn clean package
+      
+artifacts:
+   files:
+     - target/*.war
